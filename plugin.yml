@@ -1,0 +1,5 @@
+name: BoatRacePE
+version: 1.0.0
+author: Sandertv
+api: 1.14.0
+main: Sandertv\BoatRacePE\BoatRacePE
