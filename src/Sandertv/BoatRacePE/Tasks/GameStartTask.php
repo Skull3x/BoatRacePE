@@ -1,5 +1,5 @@
 <?php
-namespace MCrafters\TeamPvP\Tasks;
+namespace Sandertv\BoatRacePE\Tasks;
 
 use pocketmine\scheduler\PluginTask;
 use pocketmine\level\Level;
