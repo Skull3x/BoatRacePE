@@ -3,9 +3,4 @@ version: 1.0.0
 author: Sandertv
 api: 1.14.0
 main: Sandertv\BoatRacePE\BoatRacePE
-commands:
-  br:
-    description: Join a BoatRace match
-    usage: /br
-    aliases: [boatrace]
     
