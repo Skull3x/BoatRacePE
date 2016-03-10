@@ -46,7 +46,7 @@ class BoatRacePE extends PluginBase implements Listener
     }
         $this->getServer()->getScheduler()->scheduleRepeatingTask(new Tasks\SignUpdaterTask($this), 15);
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
-        $this->getServer()->getLogger()->info(Color::BOLD . Color::GOLD . "M" . Color::AQUA . "BoatRacePE " . Color::GREEN . "Enabled" . Color::RED . "!");
+        $this->getServer()->getLogger()->info(Color::BOLD . Color::AQUA . "BoatRacePE " . Color::GREEN . "Enabled" . Color::RED . "!");
     }
     public function isFriend($p1, $p2)
     {
@@ -70,7 +70,7 @@ class BoatRacePE extends PluginBase implements Listener
     public function setTeam($p, $team)
     {
         if (strtolower($team) === "red") {
-            if (count($this->reds) < 5) {
+            if (count($this->reds) = 1) {
                 if ($this->getTeam($p) === "blue") {
                     unset($this->blues{
                     array_search(
@@ -90,7 +90,7 @@ class BoatRacePE extends PluginBase implements Listener
                 return false;
             }
         } elseif (strtolower($team) === "blue") {
-            if (count($this->blues) < 5) {
+            if (count($this->blues) = 1) {
                 if ($this->getTeam($p) === "red") {
                     unset($this->reds{
                     array_search(
@@ -139,7 +139,7 @@ class BoatRacePE extends PluginBase implements Listener
         $p = $event->getPlayer();
         $teams = array("red", "blue");
         if ($event->getBlock()->getX() === $this->yml["sign_join_x"] && $event->getBlock()->getY() === $this->yml["sign_join_y"] && $event->getBlock()->getZ() === $this->yml["sign_join_z"]) {
-            if (count($this->blues) !== 5 and count($this->reds) !== 5) {
+            if (count($this->blues) !== 1 and count($this->reds) !== 1) {
                 $this->setTeam($p->getName(), $teams{
                     array_rand(
                     $teams, 1)
@@ -147,7 +147,7 @@ class BoatRacePE extends PluginBase implements Listener
                 $s = new GameManager();
                 $s->run();
             } else {
-                $p->sendMessage($this->yml["teams_are_full_message"]);
+                $p->sendMessage($this->yml[Boat race is full!]);
             }
         }
     }
@@ -195,7 +195,7 @@ class BoatRacePE extends PluginBase implements Listener
                     $this->removeFromTeam($b, "blue");
                     $this->getServer()->getPlayer($b)->teleport($this->getServer()->getLevelByName($this->yml["spawn_level"])->getSafeSpawn());
                     $this->gameStarted = false;
-                    $this->getServer()->broadcastMessage("Blue Team won TeamPvP!");
+                    $this->getServer()->broadcastMessage("Blue Side won the Boat Race!");
                 $a{
                     "WON"
                     
@@ -209,7 +209,7 @@ class BoatRacePE extends PluginBase implements Listener
                     $this->removeFromTeam($r, "red");
                     $this->getServer()->getPlayer($r)->teleport($this->getServer()->getLevelByName($this->yml["spawn_level"])->getSafeSpawn());
                     $this->gameStarted = false;
-                    $this->getServer()->broadcastMessage("Red Team won TeamPvP!");
+                    $this->getServer()->broadcastMessage("Red Side won the Boat Race!");
                 $a{
                     "WON"
                     
