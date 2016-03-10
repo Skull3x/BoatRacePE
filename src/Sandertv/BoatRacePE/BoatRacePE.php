@@ -196,6 +196,7 @@ class BoatRacePE extends PluginBase implements Listener
                     $this->getServer()->getPlayer($b)->teleport($this->getServer()->getLevelByName($this->yml["spawn_level"])->getSafeSpawn());
                     $this->gameStarted = false;
                     $this->getServer()->broadcastMessage("Blue Side won the Boat Race!");
+                    $this->getServer()->removeEntities()
                 $a{
                     "WON"
                     
@@ -210,6 +211,7 @@ class BoatRacePE extends PluginBase implements Listener
                     $this->getServer()->getPlayer($r)->teleport($this->getServer()->getLevelByName($this->yml["spawn_level"])->getSafeSpawn());
                     $this->gameStarted = false;
                     $this->getServer()->broadcastMessage("Red Side won the Boat Race!");
+                    $this->getServer()->removeEntities()
                 $a{
                     "WON"
                     
