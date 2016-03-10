@@ -1,1 +1,30 @@
+#the positions of the join sign
+sign_join_x: 
+sign_join_y: 
+sign_join_z:
+sign_world: "world"
 
+#the positions of the color's enter places.
+blue_enter_x: 
+blue_enter_y: 
+blue_enter_z: 
+
+red_enter_x: 
+red_enter_y: 
+red_enter_z: 
+
+#the place when players teleport when the race is going to start soon
+waiting_x: 
+waiting_y: 
+waiting_z: 
+
+#the items will be given to the players when the game starts
+items:
+ - 90
+
+#the message will be sent to the player when the teams are full
+teams_are_full_message: "Boat race is full!"
+
+#the level that we'll get it's spawn and teleport the player to it when the game ends
+spawn_level: "world"
+...
