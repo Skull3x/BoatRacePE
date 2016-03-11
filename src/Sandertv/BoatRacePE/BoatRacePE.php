@@ -17,7 +17,6 @@ use pocketmine\block\WallSign, PostSign;
 use pocketmine\scheduler\ServerScheduler;
 
 class BoatRacePE extends PluginBase implements Listener
-class BoatRacePE extends PluginManager
 {
 
   // Colors
