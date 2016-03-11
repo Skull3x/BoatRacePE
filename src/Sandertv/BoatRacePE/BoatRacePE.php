@@ -8,7 +8,7 @@ use pocketmine\event\Listener;
 use pocketmine\event\entity\EntityDamageEvent;
 use pocketmine\event\entity\EntityDamageByEntityEvent;
 use pocketmine\event\player\PlayerDeathEvent;
-use pocketmine\event\player\EntityInteractEvent;
+use pocketmine\event\player\PlayerInteractEvent;
 use pocketmine\math\Vector3;
 use pocketmine\level\Position;
 use pocketmine\command\Command, CommandSender;
