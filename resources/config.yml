@@ -1,10 +1,13 @@
+lines (28 sloc)  761 Bytes
+---
+
 #the positions of the join sign
 sign_join_x: 
 sign_join_y: 
 sign_join_z:
 sign_world: "world"
 
-#the positions of the color's enter places.
+#the positions of the team's enter places.
 blue_enter_x: 
 blue_enter_y: 
 blue_enter_z: 
@@ -13,7 +16,7 @@ red_enter_x:
 red_enter_y: 
 red_enter_z: 
 
-#the place when players teleport when the race is going to start soon
+#the place when players teleport when the game is going to start soon
 waiting_x: 
 waiting_y: 
 waiting_z: 
@@ -21,9 +24,12 @@ waiting_z:
 #the items will be given to the players when the game starts
 items:
  - 90
+ 
+#the message will be sent to the player when he's hitting his team mate
+hit_same_team_message: "{player} is in your team!"
 
-#the message will be sent to the player when the teams are full
-teams_are_full_message: "Boat race is full!"
+#the message will be sent to the player when the game is full
+teams_are_full_message: "Teams are full"
 
 #the level that we'll get it's spawn and teleport the player to it when the game ends
 spawn_level: "world"
