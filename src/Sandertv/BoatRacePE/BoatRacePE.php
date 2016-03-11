@@ -5,7 +5,7 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat as Color;
 use pocketmine\utils\Config;
 use pocketmine\event\Listener;
-use pocketmine\event\player\{PlayerDeathEvent, PlayerInteractEvent};
+use pocketmine\event\player\[PlayerDeathEvent, PlayerInteractEvent];
 use pocketmine\math\Vector3;
 use pocketmine\level\Position;
 use pocketmine\command\{Command, CommandSender};
