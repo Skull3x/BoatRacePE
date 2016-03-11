@@ -9,11 +9,11 @@ use pocketmine\event\entity\EntityDamageEvent, EntityDamageByEntityEvent;
 use pocketmine\event\player\PlayerDeathEvent, PlayerInteractEvent;
 use pocketmine\math\Vector3;
 use pocketmine\level\Position;
-use pocketmine\command\{Command, CommandSender};
+use pocketmine\command\Command, CommandSender;
 use pocketmine\Player;
 use pocketmine\block\Block;
 use pocketmine\item\Item;
-use pocketmine\block\{WallSign, PostSign};
+use pocketmine\block\WallSign, PostSign;
 use pocketmine\scheduler\ServerScheduler;
 
 class BoatRacePE extends PluginBase implements Listener
