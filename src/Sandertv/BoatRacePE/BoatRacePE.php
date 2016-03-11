@@ -69,7 +69,7 @@ class BoatRacePE extends PluginBase implements Listener
     public function setTeam($p, $team)
     {
         if (strtolower($team) === "red") {
-            if (count($this->reds) = 1) {
+            if (count($this->reds) < 2) {
                 if ($this->getTeam($p) === "blue") {
                     unset($this->blues{
                     array_search(
@@ -83,13 +83,13 @@ class BoatRacePE extends PluginBase implements Listener
                 $this->getServer()->getPlayer($p)->setNameTag("§c§l" . $p);
                 $this->getServer()->getPlayer($p)->teleport(new Vector3($this->yml["waiting_x"], $this->yml["waiting_y"], $this->yml["waiting_z"]));
                 return true;
-            } elseif (count($this->blues) < 5) {
+            } elseif (count($this->blues) < 2) {
                 $this->setTeam($p, "blue");
             } else {
                 return false;
             }
         } elseif (strtolower($team) === "blue") {
-            if (count($this->blues) = 1) {
+            if (count($this->blues) < 2) {
                 if ($this->getTeam($p) === "red") {
                     unset($this->reds{
                     array_search(
@@ -104,7 +104,7 @@ class BoatRacePE extends PluginBase implements Listener
                 $this->getServer()->getPlayer($p)->setNameTag("§b§l" . $p);
                 $this->getServer()->getPlayer($p)->teleport(new Vector3($this->yml["waiting_x"], $this->yml["waiting_y"], $this->yml["waiting_z"]));
                 return true;
-            } elseif (count($this->reds) < 5) {
+            } elseif (count($this->reds) < 2) {
                 $this->setTeam($p, "red");
             } else {
                 return false;
