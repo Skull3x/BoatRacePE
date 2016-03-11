@@ -146,7 +146,7 @@ class BoatRacePE extends PluginBase implements Listener
                 $s = new GameManager();
                 $s->run();
             } else {
-                $p->sendMessage($this->yml[Boat race is full!]);
+                $p->sendMessage($this->yml["Boat race is full!"]);
             }
         }
     }
