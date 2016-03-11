@@ -1,6 +1,6 @@
 name: BoatRacePE
 version: 1.0.0
 author: Sandertv
-api: 1.14.0
+api: 1.13.0
 main: Sandertv\BoatRacePE\BoatRacePE
-    
+load: POSTWORLD    
