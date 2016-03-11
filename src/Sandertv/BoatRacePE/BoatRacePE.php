@@ -6,7 +6,7 @@ use pocketmine\utils\TextFormat as Color;
 use pocketmine\utils\Config;
 use pocketmine\event\Listener;
 use pocketmine\event\entity\EntityDamageEvent, EntityDamageByEntityEvent;
-use pocketmine\event\player\PlayerDeathEvent;
+use pocketmine\event\player\PlayerDeathEvent, EntityInteractEvent;
 use pocketmine\math\Vector3;
 use pocketmine\level\Position;
 use pocketmine\command\Command, CommandSender;
