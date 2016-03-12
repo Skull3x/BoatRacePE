@@ -26,8 +26,6 @@ class BoatRacePE extends PluginBase implements Listener
   public $blues = [];
   public $gameStarted = false;
   public $yml;
-
-  public $gamemanager = array();
   
   public function onEnable()
 {
@@ -147,7 +145,7 @@ class BoatRacePE extends PluginBase implements Listener
                     array_rand(
                     $teams, 1)
                 });
-                $s = new GameManager();
+                $s = new $GameManager();
                 $s->run();
             } else {
                 $p->sendMessage($this->yml["Boat race is full!"]);
