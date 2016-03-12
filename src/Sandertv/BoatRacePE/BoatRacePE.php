@@ -27,7 +27,7 @@ class BoatRacePE extends PluginBase implements Listener
   public $gameStarted = false;
   public $yml;
   
-  public $GameManager = array();
+  public $gamemanager=array();
 
   public function onEnable()
 {
@@ -145,7 +145,7 @@ class BoatRacePE extends PluginBase implements Listener
             if (count($this->blues) !== 1 and count($this->reds) !== 1) {
                 $this->setTeam($p->getName(), $teams{
                     array_rand(
-                    $teams, 1)
+                    $teams, 2)
                 });
                 $s = new $GameManager();
                 $s->run();
