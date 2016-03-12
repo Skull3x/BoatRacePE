@@ -27,7 +27,7 @@ class BoatRacePE extends PluginBase implements Listener
   public $gameStarted = false;
   public $yml;
 
-  public $gamemanager = array ();
+  public $gamemanager = array();
   
   public function onEnable()
 {
