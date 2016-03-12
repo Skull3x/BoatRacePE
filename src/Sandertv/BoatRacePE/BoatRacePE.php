@@ -24,7 +24,7 @@ class BoatRacePE extends PluginBase implements Listener
   // Colors
   public $reds = [];
   public $blues = [];
-  public $gameStarted = false
+  public $gameStarted = false;
   public $yml;
   
   public $GameManager = array();
